@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera web</title>
+</head>
+<body>
+    <form action="/formulario" method="POST"><!--formulario-->
+        <label for="nombre">Nombre: </label><!--asi, cuando pinchamos en nombre, nos selecciona el cuadrito para escribir el texto-->
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" /> <!--input es el cuadrado para que el usuario escriba-->
+        <br>
+        <label for="apellido">Apellido: </label>
+        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apelido" />
+        <br>
+        <label for="Comentario">Comentario</label><!--al for le tenemos que indicar el mismo nombre que aparece en el id-->
+        <textarea cols="50" rows="10" id="Comentario" placeholder="Ingrese comentario" name="comentario" ></textarea>
+        <br>
+        <input type="submit"  /> 
+    <!-- en este caso lo que hace name="nombre", es asignarle un valor a la llave nombre, asi que si escribo hola en el input, nombre tendra el valor de hola--> 
+    <!--placeholder: le indica al usuario qué tiene que escribir en el input-->
+    <!-- type lo que hace es cambiar el valor del input, (el cual por defecto es text), por ejemplo, si ponemos "submit" nos creará un botón(text, submit, email, password, radio, checkbox, file )-->
+    </form>
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>mi cuarto heading</h1>
+    <h5>Mi quinto heading</h5>
+    <h6>Chanchito feliz</h6>
+    <p>Chanchito feliz esta muy feliz</p><!--para anhadir nuevas lineas creamos otra etiqueta p-->
+    <p>Chanchito triste esta muy triste</p>
+    <hr><!--crea una linea para separar el texto-->
+    <h2>GAY</h2>
+    <p>Texto un poco <span style="color:blue"> mas largo </span>
+        para mostrar <br> <!--esto se usa para mover una linea para abajo-->
+        la etiqueta de span!
+    </p>
+    <!--eso de syle es css-->
+    <a target="_blank" href="https://www.google.com">Ir a google</a><!--Esta etiqueta sirve para navegar
+    pero tenemos que indicarle a donde queremos que nos lleve este link(href)-->
+    <!--target="_blank" le indica al explorador que abra el link en una 
+    pestanha nueva-->
+    <hr>
+    <img src="img/johnpork.jpg" height="400"/> <!--esta etiqueta no se cierra como todas(autocontenida)-->
+</body>
+</html>
